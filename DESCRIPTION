@@ -10,3 +10,5 @@ LazyData: true
 URL: https://github.com/dcgerard/vifa
 BugReports: http://github.com/dcgerard/vifa/issues
 RoxygenNote: 5.0.1
+Suggests: testthat,
+    covr
