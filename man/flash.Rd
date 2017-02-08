@@ -16,6 +16,9 @@ flash(Y, maxrank, loadings = c("sparse", "equivariant"),
 \item{loadings}{Should we apply the ASH prior to the loadings (\code{"sparse"}),
 or an equivariant normal prior (\code{"equivariant"})?}
 
+\item{factors}{Should we apply the ASH prior to the factors (\code{"sparse"}),
+or an equivariant normal prior (\code{"equivariant"})?}
+
 \item{errors}{What should the error model be? Should it be homoscedastic
 (\code{"homoscedastic"}) or heteroscedastic columns (\code{"heteroscedastic"})?}
 }
@@ -26,7 +29,7 @@ the adaptive shrinkage framework of Stephens (2016).
 }
 \details{
 The model is
-\dqn{Y = AB + E,}
+\deqn{Y = AB + E,}
 where \eqn{A} are the loadings and \eqn{B} are the factors. The error term, \eqn{E}, is
 assumed to be independent Gaussian with either homoscedastic or column-specific heteroscedastic
 noise. FLASH performs mean-field variational inference on to derive an approximation to

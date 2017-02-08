@@ -6,7 +6,7 @@
 #' the adaptive shrinkage framework of Stephens (2016).
 #'
 #' The model is
-#' \dqn{Y = AB + E,}
+#' \deqn{Y = AB + E,}
 #' where \eqn{A} are the loadings and \eqn{B} are the factors. The error term, \eqn{E}, is
 #' assumed to be independent Gaussian with either homoscedastic or column-specific heteroscedastic
 #' noise. FLASH performs mean-field variational inference on to derive an approximation to
@@ -25,6 +25,8 @@
 #'     or an equivariant normal prior (\code{"equivariant"})?
 #' @param errors What should the error model be? Should it be homoscedastic
 #'     (\code{"homoscedastic"}) or heteroscedastic columns (\code{"heteroscedastic"})?
+#' @param factors Should we apply the ASH prior to the factors (\code{"sparse"}),
+#'     or an equivariant normal prior (\code{"equivariant"})?
 #'
 #' @author David Gerard
 #'
