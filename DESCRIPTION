@@ -12,3 +12,7 @@ BugReports: http://github.com/dcgerard/vifa/issues
 RoxygenNote: 5.0.1
 Suggests: testthat,
     covr
+LinkingTo: Rcpp,
+    RcppArmadillo
+Imports: Rcpp,
+    RcppArmadillo
